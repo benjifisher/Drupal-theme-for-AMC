@@ -65,17 +65,15 @@
  */
 @media all and (min-width: 480px) {
   #main {
-    padding-top: 3em;
-    /* Move all the children of #main down to make room. */
+    /* padding-top: 3em; Move all the children of #main down to make room. */
     position: relative;
   }
 
   #navigation {
     position: absolute;
-    top: 0;
+    top: -38px;
     /* Move the navbar up inside #main's padding. */
-    height: 3em;
-    width: 100%;
+    height: 36px;
   }
 }
 @media all and (min-width: 480px) and (max-width: 959px) {

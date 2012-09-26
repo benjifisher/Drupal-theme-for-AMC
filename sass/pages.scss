@@ -64,17 +64,20 @@ body {
 }
 
 #name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
+  position: absolute;
+  top: 8em;
+  right: 4em;
 }
 
 #site-name { /* The name of the website */
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
+  font-weight: normal;
   line-height: 1.5em;
 
   a:link,
   a:visited {
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
 
