@@ -22,6 +22,78 @@
   /* Block title */
 }
 
+.region-sidebar-first .block {
+  /* Block wrapper */
+}
+.region-sidebar-first .block h2.block-title {
+  /* Block title */
+  font-size: 1.1667em;
+  margin: 0;
+  padding: 7px 20px 10px;
+}
+.region-sidebar-first .block.odd h2.block-title {
+  color: #ad5814;
+}
+.region-sidebar-first .block.odd .content {
+  background-color: #e8ede0;
+}
+.region-sidebar-first .block.odd ul.menu {
+  border-top: 1px dashed #d1c39d;
+}
+.region-sidebar-first .block.even {
+  /* Zebra striping for each block in the region */
+  color: #fff;
+  background-color: #59976b;
+  margin: 30px auto;
+}
+.region-sidebar-first .block.even h2.block-title {
+  /* Block title */
+  padding: 7px 0 7px 20px;
+}
+.region-sidebar-first .block.even ul.menu {
+  border-top: 1px dashed #ffffff;
+}
+.region-sidebar-first .block.even ul.menu li {
+  border-bottom: 1px dashed #ffffff;
+}
+.region-sidebar-first .block.even ul.menu li a {
+  color: #ffffff;
+}
+.region-sidebar-first .block ul.menu li {
+  padding: 7px 0 7px 0px;
+  list-style: none;
+  border-bottom: 1px dashed #d1c39d;
+}
+
+.region-sidebar-second .block {
+  /* Block wrapper */
+  border: 1px solid #c2bfb2;
+  background: #e5e0d1 url("../images/hdrBlank.jpg") top left no-repeat;
+  padding: 12px 8px;
+  color: #3c2f28;
+  margin: 0;
+}
+.region-sidebar-second .block.even {
+  /* Zebra striping for each block in the region */
+  color: #675136;
+}
+.region-sidebar-second .block p:first-child {
+  margin-top: 0px;
+}
+.region-sidebar-second .block ul {
+  padding-left: 16px;
+  margin-bottom: 0px;
+}
+.region-sidebar-second .block h2.block-title {
+  /* Block title */
+  padding-bottom: 36px;
+  text-align: center;
+  color: #cb341e;
+  font-size: 1.6667em;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+}
+
 #block-aggregator-category-1 {
   /* Block for the latest news items in the first category */
 }
