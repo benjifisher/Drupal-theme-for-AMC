@@ -81,8 +81,20 @@ li a.active {
 #main-menu {
 }
 
+.region-secondary-links {
+  float: right;
+}
+
 #secondary-menu {
   float: right; /* LTR */
+
+  li {
+    font-size: 0.8667 em;
+  }
+
+  a {
+    color: #3f2913;
+  }
 }
 
 /*

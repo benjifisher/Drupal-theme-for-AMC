@@ -16,10 +16,6 @@ body {
   color: #3c2f28;
 }
 
-#page {
-  background: transparent url("../images/bgHeader.jpg") top left no-repeat;
-}
-
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -40,6 +36,11 @@ body {
 /*
  * Header
  */
+#header {
+  background: transparent url("../images/bgHeader.jpg") top left no-repeat;
+  min-height: 128px;
+}
+
 #logo {
   /* Wrapping link for logo */
   float: left;
@@ -87,6 +88,10 @@ body {
 /*
  * Main (container for everything else)
  */
+#main {
+  border-top: 2px solid #786753;
+}
+
 /*
  * Content
  */

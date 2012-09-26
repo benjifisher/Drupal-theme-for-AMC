@@ -22,7 +22,6 @@ body {
 }
 
 #page {
-  background: transparent url('../images/bgHeader.jpg') top left no-repeat;
 }
 
 /*
@@ -49,12 +48,15 @@ body {
  */
 
 #header {
+  background: transparent url('../images/bgHeader.jpg') top left no-repeat;
+  min-height: 128px;
 }
 
 #logo { /* Wrapping link for logo */
   float: left; /* LTR */
   margin: 0;
   padding: 0;
+  margin-left: 2em;
 
   img {
     vertical-align: bottom;
@@ -96,6 +98,7 @@ body {
  */
 
 #main {
+  border-top: 2px solid #786753;
 }
 
 /*
