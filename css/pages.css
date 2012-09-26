@@ -12,6 +12,12 @@
 body {
   margin: 0;
   padding: 0;
+  background: #e5d9b8 url("../images/bg.jpg") top left repeat-x;
+  color: #3c2f28;
+}
+
+#page {
+  background: transparent url("../images/bgHeader.jpg") top left no-repeat;
 }
 
 /*
