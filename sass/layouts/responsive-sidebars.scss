@@ -56,6 +56,7 @@ $zen-auto-include-item-base: false;
 
 #header,
 #content,
+#banner,
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
@@ -101,7 +102,7 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-first {
-    #content { /* Span 2 columns, starting in 2nd column from left. */
+    #banner, #content { /* Span 2 columns, starting in 2nd column from left. */
       @include zen-grid-item(2, 2);
     }
 
@@ -115,6 +116,9 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-second {
+    #banner {
+      @include zen-grid-item(3, 1);
+    }
     #content { /* Span 2 columns, starting in 1st column from left. */
       @include zen-grid-item(2, 1);
     }
@@ -129,7 +133,7 @@ $zen-auto-include-item-base: false;
    */
 
   .two-sidebars {
-    #content { /* Span 2 columns, starting in 2nd column from left. */
+    #banner, #content { /* Span 2 columns, starting in 2nd column from left. */
       @include zen-grid-item(2, 2);
     }
 
@@ -170,7 +174,7 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-first {
-    #content { /* Span 4 columns, starting in 2nd column from left. */
+    #banner, #content { /* Span 4 columns, starting in 2nd column from left. */
       @include zen-grid-item(4, 2);
     }
 
@@ -184,6 +188,10 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-second {
+    #banner {
+      @include zen-grid-item(5, 1);
+    }
+
     #content { /* Span 4 columns, starting in 1st column from left. */
       @include zen-grid-item(4, 1);
     }
@@ -198,6 +206,10 @@ $zen-auto-include-item-base: false;
    */
 
   .two-sidebars {
+    #banner {
+      @include zen-grid-item(4, 2);
+    }
+
     #content { /* Span 3 columns, starting in 2nd column from left. */
       @include zen-grid-item(3, 2);
     }

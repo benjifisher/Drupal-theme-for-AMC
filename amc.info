@@ -99,6 +99,7 @@ stylesheets[all][] = css/print.css
 regions[secondary_links]= Secondary links
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[banner]         = Banner photo
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
