@@ -26,7 +26,6 @@
 }
 
 .region-sidebar-first .block { /* Block wrapper */
-
   h2.block-title { /* Block title */
     font-size: 1.1667em;
     margin: 0;
@@ -34,21 +33,22 @@
   }
 
   &.odd {
+    background-color: #e8ede0;
+
     h2.block-title {
       color: #ad5814;
     }
 
-    .content {
-      background-color: #e8ede0;
-    }
-
     ul.menu{
       border-top: 1px dashed #d1c39d;
+
+      li a {
+	color: #465f27;
+      }
     }
   }
 
   &.even { /* Zebra striping for each block in the region */
-    color: #fff;
     background-color: #59976b;
     margin: 30px auto;
 
@@ -70,13 +70,19 @@
 
   }
 
-  p:first-child {
-  }
+  ul.menu {
+    padding-left: 10px;
 
-  ul.menu li {
-    padding: 7px 0 7px 0px;
-    list-style: none;
-    border-bottom: 1px dashed #d1c39d;
+    li {
+      padding: 7px 0 7px 0px;
+      list-style: none;
+      border-bottom: 1px dashed #d1c39d;
+
+      a {
+	text-decoration: none;
+      }
+
+    }
   }
 
 }

@@ -31,18 +31,20 @@
   margin: 0;
   padding: 7px 20px 10px;
 }
+.region-sidebar-first .block.odd {
+  background-color: #e8ede0;
+}
 .region-sidebar-first .block.odd h2.block-title {
   color: #ad5814;
-}
-.region-sidebar-first .block.odd .content {
-  background-color: #e8ede0;
 }
 .region-sidebar-first .block.odd ul.menu {
   border-top: 1px dashed #d1c39d;
 }
+.region-sidebar-first .block.odd ul.menu li a {
+  color: #465f27;
+}
 .region-sidebar-first .block.even {
   /* Zebra striping for each block in the region */
-  color: #fff;
   background-color: #59976b;
   margin: 30px auto;
 }
@@ -59,10 +61,16 @@
 .region-sidebar-first .block.even ul.menu li a {
   color: #ffffff;
 }
+.region-sidebar-first .block ul.menu {
+  padding-left: 10px;
+}
 .region-sidebar-first .block ul.menu li {
   padding: 7px 0 7px 0px;
   list-style: none;
   border-bottom: 1px dashed #d1c39d;
+}
+.region-sidebar-first .block ul.menu li a {
+  text-decoration: none;
 }
 
 .region-sidebar-second .block {
