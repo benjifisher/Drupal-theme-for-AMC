@@ -57,8 +57,29 @@
 }
 
 /*
- * Navigation bar
+ * The site name should appear on top of the banner photo. For medium and wide
+ * screens, the #banner will float left and #name-and-slogan will be positioned
+ * relative to it. For narrow screen sizes, declare #banner to be relative.
+ * Adjust the font size so that the site name fits reasonably well.
  */
+/* Default, for narrow screens. */
+#name-and-slogan {
+  position: absolute;
+  top: 4em;
+  right: 2em;
+  font-size: 1.2em;
+}
+
+#banner {
+  position: relative;
+}
+
+/* Wide screens. */
+@media all and (min-width: 980px) {
+  #name-and-slogan {
+    font-size: 2em;
+  }
+}
 @media all and (min-width: 480px) {
   #main {
     /* padding-top: 3em; Move all the children of #main down to make room. */

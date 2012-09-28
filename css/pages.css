@@ -53,17 +53,9 @@ body {
   vertical-align: bottom;
 }
 
-#name-and-slogan {
-  /* Wrapper for website name and slogan */
-  position: absolute;
-  top: 8em;
-  right: 4em;
-}
-
 #site-name {
   /* The name of the website */
   margin: 0;
-  font-size: 4em;
   font-weight: normal;
   line-height: 1.5em;
 }
