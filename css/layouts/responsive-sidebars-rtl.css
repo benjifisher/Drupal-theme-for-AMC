@@ -69,7 +69,7 @@
 /* Default, for narrow screens. */
 #name-and-slogan {
   position: absolute;
-  top: 4em;
+  bottom: 2em;
   right: 2em;
   font-size: 1.2em;
 }
@@ -79,7 +79,7 @@
 }
 
 /* Wide screens. */
-@media all and (min-width: 980px) {
+@media all and (min-width: 960px) {
   #name-and-slogan {
     font-size: 2em;
   }
@@ -99,7 +99,7 @@
 }
 @media all and (min-width: 480px) and (max-width: 959px) {
   /*
-   * Use 3 grid columns for smaller screens.
+   * Use 6 grid columns for smaller screens.
    */
   /*
    * The layout when there is only one sidebar, the left one.
@@ -144,7 +144,6 @@
     margin-left: -100%;
   }
   .sidebar-second #content {
-    /* Span 2 columns, starting in 1st column from left. */
     clear: right;
     float: right;
     width: 66.66667%;
@@ -152,7 +151,6 @@
     margin-left: -66.66667%;
   }
   .sidebar-second .region-sidebar-second {
-    /* Span 1 column, starting in 3rd column from left. */
     float: right;
     width: 33.33333%;
     margin-right: 66.66667%;
@@ -163,7 +161,6 @@
    * The layout when there are two sidebars.
    */
   .two-sidebars .region-sidebar-first {
-    /* Span 1 column, starting in 1st column from left. */
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -184,7 +181,6 @@
     margin-left: -100%;
   }
   .two-sidebars #content {
-    /* Span 2 columns, starting in 2nd column from left. */
     clear: right;
     float: right;
     width: 100%;
@@ -192,7 +188,7 @@
     margin-left: -100%;
   }
   .two-sidebars .region-sidebar-second {
-    /* Start a new row and span all 3 columns. */
+    /* Start a new row and span all 6 columns. */
     float: right;
     width: 100%;
     margin-right: 0%;
@@ -210,47 +206,43 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
-    /* Span 1 column, starting in the 1st column from left. */
+  .two-sidebars .region-sidebar-second .block:nth-child(2n+1) {
+    /* Span 3 columns, starting in the 1st column from left. */
     float: right;
-    width: 33.33333%;
+    width: 50%;
     margin-right: 0%;
-    margin-left: -33.33333%;
+    margin-left: -50%;
     clear: right;
   }
-  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
-    /* Span 1 column, starting in the 2nd column from left. */
+  .two-sidebars .region-sidebar-second .block:nth-child(2n) {
+    /* Span 3 columns, starting in the 2nd column from left. */
     float: right;
-    width: 33.33333%;
-    margin-right: 33.33333%;
-    margin-left: -66.66667%;
-  }
-  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
-    /* Span 1 column, starting in the 3rd column from left. */
-    float: right;
-    width: 33.33333%;
-    margin-right: 66.66667%;
+    width: 50%;
+    margin-right: 50%;
     margin-left: -100%;
   }
 }
 @media all and (min-width: 960px) {
   /*
-   * Use 5 grid columns for larger screens.
+   * Use 9 grid columns for larger screens.
+   * Why use the same column count for all three layouts?
    */
   /*
    * The layout when there is only one sidebar, the left one.
    */
+  .sidebar-first {
+    /* Span 2 columns, starting in 1st column from left. */
+  }
   .sidebar-first .region-sidebar-first {
-    /* Span 1 column, starting in 1st column from left. */
     float: right;
-    width: 20%;
+    width: 22.22222%;
     margin-right: 0%;
-    margin-left: -20%;
+    margin-left: -22.22222%;
   }
   .sidebar-first #secondary {
     float: right;
-    width: 80%;
-    margin-right: 20%;
+    width: 77.77778%;
+    margin-right: 22.22222%;
     margin-left: -100%;
     padding-left: 0;
     padding-right: 0;
@@ -262,7 +254,6 @@
     margin-left: -100%;
   }
   .sidebar-first #content {
-    /* Span 4 columns, starting in 2nd column from left. */
     float: right;
     width: 100%;
     margin-right: 0%;
@@ -280,18 +271,16 @@
     margin-left: -100%;
   }
   .sidebar-second #content {
-    /* Span 4 columns, starting in 1st column from left. */
     clear: right;
     float: right;
-    width: 80%;
+    width: 77.77778%;
     margin-right: 0%;
-    margin-left: -80%;
+    margin-left: -77.77778%;
   }
   .sidebar-second .region-sidebar-second {
-    /* Span 1 column, starting in 5th column from left. */
     float: right;
-    width: 20%;
-    margin-right: 80%;
+    width: 22.22222%;
+    margin-right: 77.77778%;
     margin-left: -100%;
   }
 
@@ -299,16 +288,15 @@
    * The layout when there are two sidebars.
    */
   .two-sidebars .region-sidebar-first {
-    /* Span 1 column, starting in 1st column from left. */
     float: right;
-    width: 20%;
+    width: 22.22222%;
     margin-right: 0%;
-    margin-left: -20%;
+    margin-left: -22.22222%;
   }
   .two-sidebars #secondary {
     float: right;
-    width: 80%;
-    margin-right: 20%;
+    width: 77.77778%;
+    margin-right: 22.22222%;
     margin-left: -100%;
     padding-left: 0;
     padding-right: 0;
@@ -320,18 +308,16 @@
     margin-left: -100%;
   }
   .two-sidebars #content {
-    /* Span 3 columns, starting in 2nd column from left. */
     clear: right;
     float: right;
-    width: 80%;
+    width: 77.77778%;
     margin-right: 0%;
-    margin-left: -80%;
+    margin-left: -77.77778%;
   }
   .two-sidebars .region-sidebar-second {
-    /* Span 1 column, starting in 5th column from left. */
     float: right;
-    width: 20%;
-    margin-right: 80%;
+    width: 22.22222%;
+    margin-right: 77.77778%;
     margin-left: -100%;
   }
 }
