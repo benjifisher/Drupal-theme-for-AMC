@@ -21,6 +21,12 @@
   }
 
   .submitted { /* The "posted by" information */
+    font-size: smaller;
+    color: #836e53;
+
+    time {
+      font-style: italic;
+    }
   }
 
   .content { /* Node's content wrapper */
@@ -41,6 +47,10 @@
 }
 
 .node-teaser { /* A node displayed as teaser */
+  margin: 2em;
+  padding: 16px 14px;
+  background-color: #e5e0d1;
+  border: 1px solid #b4b1a5;
 }
 
 /*

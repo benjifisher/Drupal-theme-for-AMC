@@ -154,6 +154,13 @@ a:active {
 }
 
 /*
+ * Node titles are links but do not get link color.
+ */
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:focus, h1 a:active, h2 a:link, h2 a:visited, h2 a:hover, h2 a:focus, h2 a:active {
+  color: #ad5814;
+}
+
+/*
  * Addresses outline displayed oddly in Chrome
  */
 a:focus {
