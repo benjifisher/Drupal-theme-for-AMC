@@ -134,6 +134,25 @@ body {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
+a:link {
+  color: #465f27;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #465f27;
+}
+
+a:hover,
+a:focus {
+  color: #465f27;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #465f27;
+}
+
 /*
  * Addresses outline displayed oddly in Chrome
  */

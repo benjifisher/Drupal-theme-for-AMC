@@ -22,6 +22,9 @@
   /* Block title */
 }
 
+.region-sidebar-first {
+  background-color: #d7e0c9;
+}
 .region-sidebar-first .block {
   /* Block wrapper */
 }
@@ -29,16 +32,30 @@
   /* Block title */
   font-size: 1.1667em;
   margin: 0;
-  padding: 7px 20px 10px;
+  padding: 27px 20px 10px 20px;
 }
-.region-sidebar-first .block.odd {
-  background-color: #e8ede0;
+.region-sidebar-first .block ul.menu {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dashed #d1c39d;
+  font-weight: bold;
+}
+.region-sidebar-first .block ul.menu li {
+  padding: 7px 0 7px 20px;
+  list-style: none;
+  border-top: 1px dashed #d1c39d;
+}
+.region-sidebar-first .block ul.menu li a {
+  text-decoration: none;
+}
+.region-sidebar-first .block li ul.menu, .region-sidebar-first .block li ul.menu li {
+  border: none;
 }
 .region-sidebar-first .block.odd h2.block-title {
   color: #ad5814;
 }
 .region-sidebar-first .block.odd ul.menu {
-  border-top: 1px dashed #d1c39d;
+  background-color: #e8ede0;
 }
 .region-sidebar-first .block.odd ul.menu li a {
   color: #465f27;
@@ -46,31 +63,21 @@
 .region-sidebar-first .block.even {
   /* Zebra striping for each block in the region */
   background-color: #59976b;
-  margin: 30px auto;
+  margin: 30px 5px;
 }
 .region-sidebar-first .block.even h2.block-title {
   /* Block title */
   padding: 7px 0 7px 20px;
+  color: #ffffff;
 }
 .region-sidebar-first .block.even ul.menu {
-  border-top: 1px dashed #ffffff;
+  border-bottom-color: #ffffff;
 }
 .region-sidebar-first .block.even ul.menu li {
-  border-bottom: 1px dashed #ffffff;
+  border-top-color: #ffffff;
 }
 .region-sidebar-first .block.even ul.menu li a {
   color: #ffffff;
-}
-.region-sidebar-first .block ul.menu {
-  padding-left: 10px;
-}
-.region-sidebar-first .block ul.menu li {
-  padding: 7px 0 7px 0px;
-  list-style: none;
-  border-bottom: 1px dashed #d1c39d;
-}
-.region-sidebar-first .block ul.menu li a {
-  text-decoration: none;
 }
 
 .region-sidebar-second .block {

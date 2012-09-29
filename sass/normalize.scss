@@ -155,16 +155,22 @@ body {
  */
 
 a:link {
+  color: #465f27;
+  text-decoration: none;
 }
 
 a:visited {
+  color: #465f27;
 }
 
 a:hover,
 a:focus {
+  color: #465f27;
+  text-decoration: underline;
 }
 
 a:active {
+  color: #465f27;
 }
 
 /*
