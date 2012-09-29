@@ -104,6 +104,12 @@ body {
 /*
  * Content
  */
+#content .img {
+  padding: 2px;
+  background-color: #ffffff;
+  border: 1px solid #786753;
+}
+
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }
