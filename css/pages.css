@@ -228,6 +228,10 @@ span.field-label {
   /* Aggregator, blog, and forum more link */
 }
 
+.sidebar tr.even, .sidebar tr.odd {
+  background-color: transparent;
+}
+
 /*
  * First sidebar (on left in LTR languages, on right in RTL)
  *
