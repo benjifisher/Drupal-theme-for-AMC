@@ -85,6 +85,20 @@ body {
   font-size: 1em;
 }
 
+@media all and (max-width: 480px) {
+  #header #block-search-form,
+  #header #search-block-form .form-item {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  #secondary-menu ul.links {
+    display: inline-block;
+    margin: 0.5em 0;
+    max-width: 100px;
+  }
+}
+
 .region-header { /* Wrapper for any blocks placed in the header region */
   clear: both; /* Clear the logo */
 }

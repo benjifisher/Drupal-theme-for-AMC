@@ -45,6 +45,11 @@ li a.active {
  */
 
 #navigation {
+  position: absolute;
+  top: 104px;
+  right: 1em;
+  height: 24px;
+  width: 90%;
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
 
   .block {
@@ -64,7 +69,8 @@ li a.active {
 
     li { /* A simple method to get navigation links to appear in one line. */
       float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
+      width: 20%;
+      /* padding: 0 10px 0 0; LTR */
       list-style-type: none;
       list-style-image: none;
     }
@@ -80,32 +86,35 @@ li a.active {
 
 #main-menu {
   ul {
-    width: 800px;
+    // width: 800px;
     display: block;
   }
 
   li {
     padding: 0; /* LTR */
-    height: 36px;
+//     height: 36px;
   }
 
   ul.links li a { 
-    width: 131px;
-    height: 30px;
+    // width: 131px;
+    height: 21px;
     display: block;
     margin-left: 4px;
     color:  white;
-    background-color: #ad5814;
-    font-size: 14px;
+    background-color: #b3712b;
+    font-family: $verdana;
+    font-size: 12px;
     text-align: center;
     text-decoration: none;
-    padding-top: 6px;
+    padding-top: 3px;
+    @include border-top-radius();
   }
 
 }
 
 .region-secondary-links {
   float: right;
+  margin-top: 1em;
 }
 
 #secondary-menu {

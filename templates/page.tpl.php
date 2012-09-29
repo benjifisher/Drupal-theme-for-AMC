@@ -78,7 +78,7 @@
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
     <?php endif; ?>
 
-    <?php if ($secondary_menu): ?>
+    <?php if ($secondary_menu || $page['secondary_links']): ?>
       <nav id="secondary-menu" role="navigation">
         <?php print render($page['secondary_links']); ?>
 <br>
@@ -97,6 +97,33 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+
+    <div id="navigation">
+
+      <?php if ($main_menu): ?>
+        <nav id="main-menu" role="navigation">
+          <?php
+          // This code snippet is hard to modify. We recommend turning off the
+          // "Main menu" on your sub-theme's settings form, deleting this PHP
+          // code block, and, instead, using the "Menu block" module.
+          // @see http://drupal.org/project/menu_block
+          print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+      <?php endif; ?>
+
+      <?php print render($page['navigation']); ?>
+
+    </div><!-- /#navigation -->
 
   </header>
 
@@ -141,33 +168,6 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
-
-    <div id="navigation">
-
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see http://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-    </div><!-- /#navigation -->
 
     <?php
       // Render the sidebars to see if there's anything in them.
