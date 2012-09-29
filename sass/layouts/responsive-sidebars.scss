@@ -74,6 +74,19 @@ $zen-auto-include-item-base: false;
   @include zen-grid-container();
 }
 
+/* Introduce white space around the right sidebar and blocks in the main
+ * content area.
+ */
+#secondary {
+  background-color: #ffffff;
+}
+#content {
+  padding: 2em;
+}
+.region-sidebar-second {
+  padding-right: 2.5em;
+}
+
 /*
  * The site name should appear on top of the banner photo. For medium and wide
  * screens, the #banner will float left and #name-and-slogan will be positioned
@@ -190,6 +203,8 @@ $zen-auto-include-item-base: false;
       // We are making every block in this region be a grid item.
       @include zen-nested-container();
       @include zen-clear();
+      padding-left: 2.5em;
+      padding-right: 2.5em;
 
       .block {
         @include zen-grid-item-base();
