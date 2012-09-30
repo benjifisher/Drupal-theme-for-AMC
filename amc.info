@@ -158,3 +158,9 @@ settings[shortcut_module_link]    = 1
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: http://drupal.org/node/495654
 ;plugins[panels][layouts] = layouts
+
+; See documentation for @fontyourface and admin/appearance/fontyourface
+fonts[google_fonts_api][] = "Bree Serif&subset=latin#regular"
+fonts[google_fonts_api][] = "Caudex&subset=latin#700"
+fonts[google_fonts_api][] = "Kotta One&subset=latin#regular"
+fonts[google_fonts_api][] = "Salsa&subset=latin#regular"
