@@ -37,7 +37,7 @@ body {
  * Header
  */
 #header {
-  background: transparent url("../images/headerBak.jpg") top left no-repeat;
+  background: transparent url("../images/headerBak.jpg") top left repeat-x;
   min-height: 128px;
 }
 
