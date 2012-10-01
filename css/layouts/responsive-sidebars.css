@@ -56,6 +56,13 @@
   clear: both;
 }
 
+/*
+ * Make #header relative so that #navigation can be positioned inside it.
+ */
+#header {
+  position: relative;
+}
+
 /* Introduce white space around the right sidebar and blocks in the main
  * content area.
  */
