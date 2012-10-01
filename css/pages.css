@@ -45,12 +45,13 @@ body {
   /* Wrapping link for logo */
   float: left;
   /* LTR */
+  max-width: 55%;
   margin: 0;
   padding: 0;
-  margin-left: 2em;
 }
 #logo img {
   vertical-align: bottom;
+  margin-left: 2em;
 }
 
 #site-name {
@@ -85,7 +86,6 @@ body {
   #secondary-menu ul.links {
     display: inline-block;
     margin: 0.5em 0;
-    max-width: 100px;
   }
 }
 .region-header {
