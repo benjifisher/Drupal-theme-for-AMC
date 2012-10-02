@@ -84,6 +84,7 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
+#navigation,
 #main-menu {
   ul {
     // width: 800px;
@@ -95,6 +96,7 @@ li a.active {
 //     height: 36px;
   }
 
+  ul.menu li a ,
   ul.links li a { 
     // width: 131px;
     height: 21px;
