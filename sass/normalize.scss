@@ -155,22 +155,22 @@ body {
  */
 
 a:link {
-  color: #465f27;
+  color: $amc-link-color;
   text-decoration: none;
 }
 
 a:visited {
-  color: #465f27;
+  color: $amc-link-color;
 }
 
 a:hover,
 a:focus {
-  color: #465f27;
+  color: $amc-link-color;
   text-decoration: underline;
 }
 
 a:active {
-  color: #465f27;
+  color: $amc-link-color;
 }
 
 /*
@@ -178,7 +178,7 @@ a:active {
  */
 h1, h2 {
   a:link, a:visited, a:hover, a:focus, a:active {
-    color: #ad5814;
+    color: $amc-h1-color;
   }
 }
 

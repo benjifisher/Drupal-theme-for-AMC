@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background: #e5d9b8 url('../images/bg.jpg') top left repeat-x;
-  color: #3c2f28;
+  color: $amc-body-color;
 }
 
 #page {
@@ -109,7 +109,7 @@ body {
  */
 
 #main {
-  border-top: 2px solid #786753;
+  border-top: 2px solid $amc-divider-color;
   // background-color: #ffffff;
 }
 
@@ -121,7 +121,7 @@ body {
   img {
     padding: 2px;
     background-color: #ffffff;
-    border: 1px solid #786753;
+    border: 1px solid $amc-divider-color;
   }
 }
 

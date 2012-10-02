@@ -77,10 +77,22 @@ $base-font-family: $tahoma; // The font family set on the html element.
 $font-body:        $tahoma;
 $font-monospace:   $courier;
 
+// The font for block titles in the second sidebar.
+$amc-callout-font: "Stone Informal", "Caudex", $georgia;
 
 //
 // Colors, etc.
 //
+
+$amc-logo-color: #0b5e4b;
+$amc-left-background-color: #d7e0c9;
+$amc-callout-background-color: #e5e0d1;
+$amc-body-color: #3c2f28;
+$amc-h1-color: #ad5814;
+$amc-link-color: #465f27;
+$amc-clubwide-nav-color: #59976b;
+$amc-divider-color: #786753;
+$amc-orange-button-color: #b3712b;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
