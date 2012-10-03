@@ -86,7 +86,7 @@ li a.active {
 #navigation ul.links li a,
 #main-menu ul.menu li a,
 #main-menu ul.links li a {
-  height: 21px;
+  height: 18px;
   display: block;
   margin-left: 4px;
   color: white;
@@ -95,7 +95,7 @@ li a.active {
   font-size: 12px;
   text-align: center;
   text-decoration: none;
-  padding-top: 3px;
+  padding-top: 6px;
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;

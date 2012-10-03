@@ -96,19 +96,21 @@ li a.active {
 //     height: 36px;
   }
 
+  $link-padding-top: 6px;
+  $link-font-size: 12px;
   ul.menu li a ,
   ul.links li a { 
     // width: 131px;
-    height: 21px;
+    height: 2 * $link-font-size - $link-padding-top;
     display: block;
     margin-left: 4px;
     color:  white;
     background-color: $amc-orange-button-color;
     font-family: $verdana;
-    font-size: 12px;
+    font-size: $link-font-size;
     text-align: center;
     text-decoration: none;
-    padding-top: 3px;
+    padding-top: $link-padding-top;
     @include border-top-radius();
   }
 
