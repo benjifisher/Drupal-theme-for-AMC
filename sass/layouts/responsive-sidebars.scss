@@ -104,9 +104,10 @@ $zen-auto-include-item-base: false;
 
 /* Default, for narrow screens. */
 #name-and-slogan {
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
+  /* position: absolute; */
+  /* bottom: 2em; */
+  /* right: 2em; */
+  text-align: center;
   font-size: 1.2em;
 }
 #banner {

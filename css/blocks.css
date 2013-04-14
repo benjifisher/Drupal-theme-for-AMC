@@ -64,6 +64,7 @@
   /* Zebra striping for each block in the region */
   background-color: #59976b;
   margin: 30px 5px;
+  padding: 1.5em 0.5em 1em 1.5em;
 }
 .region-sidebar-first .block.even h2.block-title {
   /* Block title */

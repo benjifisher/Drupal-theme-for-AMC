@@ -36,7 +36,8 @@ li a.active {
   top: 104px;
   right: 1em;
   height: 24px;
-  width: 90%;
+  width: 75%;
+  max-width: 960px;
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
 }
@@ -64,7 +65,7 @@ li a.active {
   /* A simple method to get navigation links to appear in one line. */
   float: left;
   /* LTR */
-  width: 20%;
+  width: 10%;
   /* padding: 0 10px 0 0; LTR */
   list-style-type: none;
   list-style-image: none;
