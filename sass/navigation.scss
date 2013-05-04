@@ -11,25 +11,13 @@
  */
 
 ul li.expanded {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-expanded.png);
-  }
-  list-style-image: inline-image("menu-expanded.png");
-  list-style-type: circle;
+  list-style-type: none;
 }
 ul li.collapsed {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-collapsed.png); /* LTR */
-  }
-  list-style-image: inline-image("menu-collapsed.png"); /* LTR */
-  list-style-type: disc;
+  list-style-type: none;
 }
 ul li.leaf {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-leaf.png);
-  }
-  list-style-image: inline-image("menu-leaf.png");
-  list-style-type: square;
+  list-style-type: none;
 }
 
 /*
