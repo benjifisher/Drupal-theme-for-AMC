@@ -12,8 +12,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: #e5d9b8 url("../images/bg.jpg") top left repeat-x;
   color: #3c2f28;
+}
+body.two-sidebars {
+  background: #e5d9b8 url("../images/bg.jpg") top left repeat-x;
 }
 
 /*

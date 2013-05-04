@@ -20,6 +20,10 @@
   max-width: 1200px;
 }
 
+body.one-sidebar #page {
+  max-width: 980px;
+}
+
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
