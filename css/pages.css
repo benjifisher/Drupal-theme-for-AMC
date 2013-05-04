@@ -106,6 +106,9 @@ body.two-sidebars {
 /*
  * Content
  */
+#content {
+  font-size: 120%;
+}
 #content img {
   padding: 2px;
   background-color: #ffffff;
