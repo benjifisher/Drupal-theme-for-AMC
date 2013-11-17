@@ -30,7 +30,8 @@
 }
 .region-sidebar-first .block h2.block-title {
   /* Block title */
-  font-size: 1.1667em;
+  font-size: 1.333em;
+  line-height: 1em;
   margin: 0;
   padding: 27px 20px 10px 20px;
 }
@@ -63,7 +64,7 @@
 .region-sidebar-first .block.even {
   /* Zebra striping for each block in the region */
   background-color: #59976b;
-  margin: 30px 5px;
+  margin: 10px 5px;
 }
 .region-sidebar-first .block.even h2.block-title {
   /* Block title */
@@ -221,4 +222,16 @@
 
 #block-views-photo-column-block-people {
   padding: 1.5em 0.5em 1em 1.5em;
+}
+
+/* Social media links in the "Keep in touch" block. */
+.block .threemile-social-media {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2em;
+}
+
+/* Heavy-handed fix to problem with the slideshow in Firefox */
+#block-views-banner-photos-block {
+  overflow: hidden;
 }

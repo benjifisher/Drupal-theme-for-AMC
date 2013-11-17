@@ -30,70 +30,71 @@
 
   .block { /* Block wrapper */
     h2.block-title { /* Block title */
-      font-size: 1.1667em;
+      font-size: 1.333em;
+      line-height: 1em;
       margin: 0;
       padding: 27px 20px 10px 20px;
-}
-
-ul.menu {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px dashed #d1c39d;
-  font-weight: bold;
-
-  li {
-    padding: 7px 0 7px 20px;
-    list-style: none;
-    border-top: 1px dashed #d1c39d;
-
-    a {
-      text-decoration: none;
     }
 
-  }
-}
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px dashed #d1c39d;
+      font-weight: bold;
 
-li ul.menu, li ul.menu li {
-  border: none;
-}
+      li {
+        padding: 7px 0 7px 20px;
+        list-style: none;
+        border-top: 1px dashed #d1c39d;
 
-&.odd {
+        a {
+          text-decoration: none;
+        }
 
-  h2.block-title {
-    color: $amc-h1-color;
-  }
-
-  ul.menu{
-    background-color: #e8ede0;
-
-    li a {
-      color: $amc-link-color;
-    }
-  }
-}
-
-&.even { /* Zebra striping for each block in the region */
-  background-color: $amc-clubwide-nav-color;
-  margin: 30px 5px;
-
-  h2.block-title { /* Block title */
-    padding: 7px 0 7px 20px;
-    color: #ffffff;
-  }
-
-  ul.menu {
-    border-bottom-color: #ffffff;
-    li {
-      border-top-color: #ffffff;
-       a {
-	color: #ffffff;
       }
     }
+
+    li ul.menu, li ul.menu li {
+      border: none;
+    }
+
+    &.odd {
+
+      h2.block-title {
+        color: $amc-h1-color;
+      }
+
+      ul.menu{
+        background-color: #e8ede0;
+
+        li a {
+          color: $amc-link-color;
+        }
+      }
+    }
+
+    &.even { /* Zebra striping for each block in the region */
+      background-color: $amc-clubwide-nav-color;
+      margin: 10px 5px;
+
+      h2.block-title { /* Block title */
+        padding: 7px 0 7px 20px;
+        color: #ffffff;
+      }
+
+      ul.menu {
+        border-bottom-color: #ffffff;
+        li {
+          border-top-color: #ffffff;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+    }
+
   }
-
-}
-
-}
 }
 
 .region-sidebar-second .block { /* Block wrapper */
@@ -213,4 +214,16 @@ li ul.menu, li ul.menu li {
 
 #block-views-photo-column-block-people {
   padding: 1.5em 0.5em 1em 1.5em;
+}
+
+/* Social media links in the "Keep in touch" block. */
+.block .threemile-social-media {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2em;
+}
+
+/* Heavy-handed fix to problem with the slideshow in Firefox */
+#block-views-banner-photos-block {
+  overflow: hidden;
 }
