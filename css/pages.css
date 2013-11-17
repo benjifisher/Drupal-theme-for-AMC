@@ -76,6 +76,7 @@ body.two-sidebars {
   /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
+  line-height: 0.75em;
 }
 
 @media all and (max-width: 480px) {
