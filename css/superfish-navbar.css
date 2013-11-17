@@ -33,8 +33,6 @@
 .sf-navbar li li.sfHover ul,
 .sf-navbar .active-trail ul {
   left: 0;
-  top: 2.0em;
-  border-top: 1px solid #786753;
 }
 
 .sf-navbar ul .sf-sub-indicator {
