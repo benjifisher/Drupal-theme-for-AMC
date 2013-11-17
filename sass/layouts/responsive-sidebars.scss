@@ -68,12 +68,20 @@ body.one-sidebar #page {
   @include zen-grid-item-base();
 }
 
+#content_bottom_first {
+  @include zen-grid-item(2, 1);
+}
+#content_bottom_second {
+  @include zen-grid-item(2, 4);
+}
+
 /*
  * Containers for grid items and flow items.
  */
 
 #header,
 #main,
+#content_bottom,
 #footer {
   @include zen-grid-container();
 }

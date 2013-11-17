@@ -149,6 +149,12 @@
   </div>
   <?php endif; ?>
 
+    <?php
+      // Render the content bottom sections to see if there's anything in them.
+      $content_bottom_first  = render($page['content_bottom_first']);
+      $content_bottom_second = render($page['content_bottom_second']);
+    ?>
+
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -165,6 +171,20 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php if ($content_bottom_first || $content_bottom_second): ?>
+        <div id="content_bottom">
+        <?php if ($content_bottom_first): ?>
+          <div id="content_bottom_first">
+          <?php print $content_bottom_first; ?>
+          </div><!-- /#content_bottom_first -->
+        <?php endif; ?>
+        <?php if ($content_bottom_second): ?>
+          <div id="content_bottom_second">
+          <?php print $content_bottom_second; ?>
+          </div><!-- /#content_bottom_second -->
+        <?php endif; ?>
+        </div><!-- /#content_bottom -->
+      <?php endif; ?>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
 

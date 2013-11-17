@@ -47,12 +47,28 @@ body.one-sidebar #page {
   word-wrap: break-word;
 }
 
+#content_bottom_first {
+  float: right;
+  width: 40%;
+  margin-right: 0%;
+  margin-left: -40%;
+}
+
+#content_bottom_second {
+  float: right;
+  width: 40%;
+  margin-right: 60%;
+  margin-left: -100%;
+}
+
 /*
  * Containers for grid items and flow items.
  */
 #header:before, #header:after,
 #main:before,
 #main:after,
+#content_bottom:before,
+#content_bottom:after,
 #footer:before,
 #footer:after {
   content: "";
@@ -60,6 +76,7 @@ body.one-sidebar #page {
 }
 #header:after,
 #main:after,
+#content_bottom:after,
 #footer:after {
   clear: both;
 }
