@@ -47,7 +47,7 @@
 
 .node-teaser {
   /* A node displayed as teaser */
-  margin: 0 0 1.5em;
+  margin: 1.5em 0 0;
   padding: 16px 14px;
   background-color: #e5e0d1;
   border: 1px solid #b4b1a5;
