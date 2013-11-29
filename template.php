@@ -160,18 +160,38 @@ function amc_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function amc_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  // $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
   // amc_preprocess_node_page() or amc_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
+  // $function = __FUNCTION__ . '_' . $variables['node']->type;
+  // if (function_exists($function)) {
+  //   $function($variables, $hook);
+  // }
+
+  // Add a CSS class to obituary nodes (teaser or full page) so that we can give
+  // them a black border.
+  // @todo: The tid and term name are hard-coded. Fix it.
+  if ($variables['type'] == 'article') {
+    /* This seems to work when Views processes a node. */
+    if (isset($variables['field_section']['und'][0])) {
+      if ($variables['field_section']['und'][0]['tid'] == 43) {
+        $variables['classes_array'][] = 'section-obituary';
+      }
+    }
+    /* This works on a node page. */
+    if (isset($variables['field_section'][0]['taxonomy_term']->name)) {
+      $class = $variables['field_section'][0]['taxonomy_term']->name;
+      $variables['classes_array'][] = 'section-' . strtolower($class);
+    }
   }
+  $foo = array_keys($variables);
+  dsm($foo);
+  dsm($variables['type']);
+  dsm($variables['node']);
+  dsm($variables['classes_array']);
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.

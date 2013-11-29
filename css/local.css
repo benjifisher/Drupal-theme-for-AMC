@@ -35,7 +35,7 @@ h3 {
 }
 
 /* Place a black border around obituary articles. */
-.node-article.section-obituary .content {
+.node-article.section-obituary {
   border: 5px solid black;
   padding: 1em;
 }
