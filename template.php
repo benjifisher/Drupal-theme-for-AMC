@@ -186,11 +186,6 @@ function amc_preprocess_node(&$variables, $hook) {
       $variables['classes_array'][] = 'section-' . strtolower($class);
     }
   }
-  $foo = array_keys($variables);
-  dsm($foo);
-  dsm($variables['type']);
-  dsm($variables['node']);
-  dsm($variables['classes_array']);
 }
 
 /**
