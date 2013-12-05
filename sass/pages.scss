@@ -156,12 +156,19 @@ h3.title { /* Comment title */
   margin: 0;
 }
 
+tr td, tr th {
+  border: 1px solid #bbb;
+  padding: 0 6px;
+}
+
 tr.even { /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  /* Drupal core uses a #eee background */
+  background-color: ivory;
 }
 
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  /* Drupal core uses a #eee background */
+  background-color: $amc-bg-color;
 }
 
 div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */

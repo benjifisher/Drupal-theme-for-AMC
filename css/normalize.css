@@ -621,8 +621,3 @@ th {
 tbody {
   border-top: none;
 }
-
-tr td, tr th {
-  border: 1px solid #bbb;
-  padding: 0 6px;
-}
