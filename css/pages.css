@@ -142,18 +142,18 @@ h3.title {
 
 tr td, tr th {
   border: 1px solid #bbb;
-  padding: 0 6px;
+  padding: 0.5em;
 }
 
 tr.even {
   /* Some tables have rows marked even or odd. */
   /* Drupal core uses a #eee background */
-  background-color: ivory;
+  background-color: #d7e0c9;
 }
 
 tr.odd {
   /* Drupal core uses a #eee background */
-  background-color: #e5d9b8;
+  background-color: #e5e0d1;
 }
 
 div.messages {
