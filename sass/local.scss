@@ -85,13 +85,31 @@ table.cols-2 th {
 }
 
 /* Style the photo gallery. */
-.view-photo-gallery .view-content .views-row-even,
-.view-photo-gallery .view-content .views-row-odd {
+#content .view-photo-gallery .photo-gallery-item {
   display: inline-block;
-  width: 168px;  /* same as photo, configured in Image styles. */
-  background-color: #CCC;
-  margin: 1ex 0;
-  text-align: center;
+  margin: 1ex 2px 0 0;
+  vertical-align: bottom;
+  position: relative;
+
+  /* Hide everything but the photo, except on hover. */
+  .details {
+    display: none;
+  }
+  &:hover .details {
+    text-align: center;
+    display: block;
+    position: absolute;
+    /* Allow for the padding and border. */
+    bottom: 7px;
+    left: 3px;
+    right: 3px;
+    padding-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    a, a:visited, a:link {
+      color: white;
+    }
+  }
 }
 
 /* Make the site slogan the same color as the AMC logo. */
