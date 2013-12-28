@@ -85,11 +85,24 @@ table.cols-2 th {
 }
 
 /* Style the photo gallery. */
+#content .view-photo-gallery .view-grouping-header {
+  text-align: center;
+  margin: 1em 0em 1em 0em;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: bold;
+}
+
 #content .view-photo-gallery .photo-gallery-item {
   display: inline-block;
   margin: 1ex 2px 0 0;
   vertical-align: bottom;
   position: relative;
+
+  /* Compensate for the padding and border of the enclosed image. */
+  .photo.bordered {
+    margin-right: 6px;
+  }
 
   /* Hide everything but the photo, except on hover. */
   .details {
@@ -105,6 +118,7 @@ table.cols-2 th {
     right: 3px;
     padding-bottom: 2px;
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 
     a, a:visited, a:link {
       color: white;
