@@ -120,22 +120,9 @@ table.cols-2 th {
   color: white;
 }
 
-/* The photo gallery puts sub-lists inside the breadcrumbs. */
-.breadcrumb ol .item-list {
+/* The photo gallery puts select forms inside the breadcrumbs. */
+.breadcrumb ol form {
   display: inline-block;
-  height: 1.2em;
-  overflow-x: hidden;
-  overflow-y: auto;
-  border: 1px solid #CCC;
-  vertical-align: top;
-}
-.breadcrumb ol .item-list ul {
-  padding: 0 1.2em 0 0;
-  margin: 0;
-  word-wrap: initial;
-}
-.breadcrumb ol .item-list ul li {
-  display: block;
 }
 
 /* Make the site slogan the same color as the AMC logo. */
