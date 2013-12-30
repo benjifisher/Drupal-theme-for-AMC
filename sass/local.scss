@@ -134,6 +134,10 @@ table.cols-2 th {
 /* The photo gallery puts select forms inside the breadcrumbs. */
 .breadcrumb ol form {
   display: inline-block;
+
+  .form-item {
+    margin: 0;
+  }
 }
 
 /* Make the site slogan the same color as the AMC logo. */

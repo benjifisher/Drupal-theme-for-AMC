@@ -129,6 +129,9 @@ table.cols-2 th {
 .breadcrumb ol form {
   display: inline-block;
 }
+.breadcrumb ol form .form-item {
+  margin: 0;
+}
 
 /* Make the site slogan the same color as the AMC logo. */
 .site-slogan {
