@@ -82,7 +82,7 @@ table.cols-2 th {
 }
 
 /* Style the photo gallery. */
-#content .view-photo-gallery .view-grouping-header {
+#view-photo-gallery .view-grouping-header {
   text-align: center;
   margin: 1em 0em 1em 0em;
   font-size: 1.5em;
@@ -90,7 +90,12 @@ table.cols-2 th {
   font-weight: bold;
 }
 
-#content .view-photo-gallery .photo-gallery-item {
+#view-photo-gallery.view-display-id-page_item .photo-gallery-item {
+  margin-right: 0;
+  width: 100%;
+}
+
+#view-photo-gallery .photo-gallery-item {
   display: inline-block;
   margin: 1ex 2px 0 0;
   vertical-align: bottom;
@@ -98,13 +103,13 @@ table.cols-2 th {
   /* Compensate for the padding and border of the enclosed image. */
   /* Hide everything but the photo, except on hover. */
 }
-#content .view-photo-gallery .photo-gallery-item .photo.bordered {
+#view-photo-gallery .photo-gallery-item .photo.bordered {
   margin-right: 6px;
 }
-#content .view-photo-gallery .photo-gallery-item .details {
+#view-photo-gallery .photo-gallery-item .details {
   display: none;
 }
-#content .view-photo-gallery .photo-gallery-item:hover .details {
+#view-photo-gallery .photo-gallery-item:hover .details {
   text-align: center;
   display: block;
   position: absolute;
@@ -116,7 +121,7 @@ table.cols-2 th {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
-#content .view-photo-gallery .photo-gallery-item:hover .details a, #content .view-photo-gallery .photo-gallery-item:hover .details a:visited, #content .view-photo-gallery .photo-gallery-item:hover .details a:link {
+#view-photo-gallery .photo-gallery-item:hover .details a, #view-photo-gallery .photo-gallery-item:hover .details a:visited, #view-photo-gallery .photo-gallery-item:hover .details a:link {
   color: white;
 }
 
