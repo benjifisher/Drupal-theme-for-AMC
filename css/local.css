@@ -133,6 +133,17 @@ table.cols-2 th {
   margin: 0;
 }
 
+/* Style the list of subalbums. */
+#view-photo-gallery .gallery-subalbum {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  background-color: lightyellow;
+  padding: 0 0.2em;
+  margin-right: 0.5em;
+  line-height: 2em;
+}
+
 /* Make the site slogan the same color as the AMC logo. */
 .site-slogan {
   color: #0b5e4b;
