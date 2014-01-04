@@ -134,6 +134,9 @@ body {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
+#content li a.active {
+  color: #000;
+}
 #content a:link {
   color: #465f27;
   text-decoration: none;

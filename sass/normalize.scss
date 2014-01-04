@@ -155,6 +155,11 @@ body {
  */
 
 #content {
+
+  li a.active {
+    color: #000;
+  }
+
   a:link {
     color: $amc-link-color;
     text-decoration: none;
