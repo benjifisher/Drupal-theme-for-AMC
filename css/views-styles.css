@@ -46,3 +46,12 @@
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
+
+/* Home page view */
+/* @todo Make these styles a SASS mixin. */
+.view-trip-lists.view-display-id-home .trip-row {
+  margin: 0 1em 0.5em;
+  padding: 1em 1ex;
+  background-color: #e5e0d1;
+  border: 1px solid #b4b1a5;
+}
