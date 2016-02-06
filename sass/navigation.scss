@@ -47,9 +47,10 @@ li a.active {
 #navigation {
   position: absolute;
   top: 104px;
-  right: 1em;
+  /* Use px to avoid overlapping the logo. */
+  left: 130px;
   height: 24px;
-  width: 90%;
+  width: 80%;
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
 
   .block {
@@ -69,7 +70,7 @@ li a.active {
 
     li { /* A simple method to get navigation links to appear in one line. */
       float: left; /* LTR */
-      width: 20%;
+      /* width: 20%; */
       /* padding: 0 10px 0 0; LTR */
       list-style-type: none;
       list-style-image: none;
@@ -97,9 +98,10 @@ li a.active {
   }
 
   $link-padding-top: 6px;
+  $link-padding-side: 2px;
   $link-font-size: 12px;
   ul.menu li a ,
-  ul.links li a { 
+  ul.links li a {
     // width: 131px;
     height: 2 * $link-font-size - $link-padding-top;
     display: block;
@@ -111,6 +113,8 @@ li a.active {
     text-align: center;
     text-decoration: none;
     padding-top: $link-padding-top;
+    padding-left: $link-padding-side;
+    padding-right: $link-padding-side;
     @include border-top-radius();
   }
 
