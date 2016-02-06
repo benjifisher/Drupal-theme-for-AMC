@@ -97,8 +97,8 @@ li a.active {
   text-align: center;
   text-decoration: none;
   padding-top: 6px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 2em;
+  padding-right: 2em;
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
