@@ -86,10 +86,10 @@
 }
 
 /** --Trip listing nodes-- **/
-.node-trip-lisitng .field-name-field-trip-id {
+.node-trip-listing .field-name-field-trip-id {
   color: #999;
 }
-.node-trip-lisitng .group-trip-details-wrapper .field-label,
-.node-trip-lisitng .group-trip-details-wrapper .field-items {
+.node-trip-listing .group-trip-details-wrapper .field-label,
+.node-trip-listing .group-trip-details-wrapper .field-items {
   display: inline-block;
 }
