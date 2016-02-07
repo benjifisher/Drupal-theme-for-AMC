@@ -92,4 +92,5 @@
 .node-trip-listing .group-trip-details-wrapper .field-label,
 .node-trip-listing .group-trip-details-wrapper .field-items {
   display: inline-block;
+  vertical-align: text-top;
 }
