@@ -55,3 +55,59 @@
   background-color: #e5e0d1;
   border: 1px solid #b4b1a5;
 }
+
+/** --Trip search form (BEF)-- **/
+/* Scrollable lists of check boxes or radio buttons using BEF:  see
+ * http://drupal.org/node/766974
+ */
+.bef-checkboxes,
+.bef-select-as-radios .form-radios {
+  /*
+   * Setting the height and overflow creates a scrollable <div> for the
+   * radio/checkbox elements.
+   * The border is just for looks -- adjust or remove as needed.
+   */
+  height: 10em;
+  width: 195px;
+  overflow: auto;
+  border: 1px solid #999;
+}
+
+/* Float the Select All/Select None link above the box and to the right. */
+.bef-toggle {
+  height: 0px;
+  position: relative;
+  top: -3ex;
+  float: right;
+}
+
+/* For the Comment Admin page */
+.page-moderate-trip-comment .bef-checkboxes,
+.page-moderate-trip-comment .bef-select-as-radios,
+.page-moderate-trip-comment .bef-select-as-radios .form-radios {
+  /*
+   * Setting the height and overflow creates a scrollable <div> for the
+   * radio/checkbox elements.
+   * The border is just for looks -- adjust or remove as needed.
+   */
+  height: auto;
+  width: 17em;
+  margin-right: 1em;
+}
+
+/* Line up multi-line options nicely */
+.bef-group-items .form-item,
+.bef-select-as-radios .form-radios .form-item {
+  text-indent: -24px;
+  margin-left: 24px;
+}
+
+/* Pack the options more tightly. */
+.bef-select-as-checkboxes .bef-checkboxes .form-item {
+  margin: 0;
+}
+
+/* Move the submit button to the right. */
+#edit-submit-trip-lists {
+  margin-left: 75%;
+}
