@@ -72,3 +72,12 @@
     @include unpublished-div;
   }
 }
+
+/** --Trip listing nodes-- **/
+.node-trip-lisitng {
+  .field-name-field-trip-id {color: #999; }
+  .group-trip-details-wrapper .field-label,
+  .group-trip-details-wrapper .field-items {
+    display: inline-block;
+  }
+}
