@@ -89,8 +89,8 @@
 .node-trip-listing .field-name-field-trip-id {
   color: #999;
 }
-.node-trip-listing .group-trip-details-wrapper .field-label,
-.node-trip-listing .group-trip-details-wrapper .field-items {
+.node-trip-listing .field-group-accordion .field-label,
+.node-trip-listing .field-group-accordion .field-items {
   display: inline-block;
   vertical-align: text-top;
 }

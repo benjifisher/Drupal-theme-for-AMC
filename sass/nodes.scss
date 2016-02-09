@@ -76,8 +76,8 @@
 /** --Trip listing nodes-- **/
 .node-trip-listing {
   .field-name-field-trip-id {color: #999; }
-  .group-trip-details-wrapper .field-label,
-  .group-trip-details-wrapper .field-items {
+  .field-group-accordion .field-label,
+  .field-group-accordion .field-items {
     display: inline-block;
     vertical-align: text-top;
   }
