@@ -35,7 +35,7 @@
       padding: 27px 20px 10px 20px;
 }
 
-ul.menu {
+ul {
   margin: 0;
   padding: 0;
   border-bottom: 1px dashed #d1c39d;
@@ -53,7 +53,7 @@ ul.menu {
   }
 }
 
-li ul.menu, li ul.menu li {
+li ul, li ul li {
   border: none;
 }
 
@@ -63,7 +63,7 @@ li ul.menu, li ul.menu li {
     color: $amc-h1-color;
   }
 
-  ul.menu{
+  ul{
     background-color: #e8ede0;
 
     li a {
@@ -81,7 +81,7 @@ li ul.menu, li ul.menu li {
     color: #ffffff;
   }
 
-  ul.menu {
+  ul {
     border-bottom-color: #ffffff;
     li {
       border-top-color: #ffffff;

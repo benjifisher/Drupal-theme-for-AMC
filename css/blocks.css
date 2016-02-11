@@ -34,30 +34,30 @@
   margin: 0;
   padding: 27px 20px 10px 20px;
 }
-.region-sidebar-first .block ul.menu {
+.region-sidebar-first .block ul {
   margin: 0;
   padding: 0;
   border-bottom: 1px dashed #d1c39d;
   font-weight: bold;
 }
-.region-sidebar-first .block ul.menu li {
+.region-sidebar-first .block ul li {
   padding: 7px 0 7px 20px;
   list-style: none;
   border-top: 1px dashed #d1c39d;
 }
-.region-sidebar-first .block ul.menu li a {
+.region-sidebar-first .block ul li a {
   text-decoration: none;
 }
-.region-sidebar-first .block li ul.menu, .region-sidebar-first .block li ul.menu li {
+.region-sidebar-first .block li ul, .region-sidebar-first .block li ul li {
   border: none;
 }
 .region-sidebar-first .block.odd h2.block-title {
   color: #ad5814;
 }
-.region-sidebar-first .block.odd ul.menu {
+.region-sidebar-first .block.odd ul {
   background-color: #e8ede0;
 }
-.region-sidebar-first .block.odd ul.menu li a {
+.region-sidebar-first .block.odd ul li a {
   color: #465f27;
 }
 .region-sidebar-first .block.even {
@@ -70,13 +70,13 @@
   padding: 7px 0 7px 20px;
   color: #ffffff;
 }
-.region-sidebar-first .block.even ul.menu {
+.region-sidebar-first .block.even ul {
   border-bottom-color: #ffffff;
 }
-.region-sidebar-first .block.even ul.menu li {
+.region-sidebar-first .block.even ul li {
   border-top-color: #ffffff;
 }
-.region-sidebar-first .block.even ul.menu li a {
+.region-sidebar-first .block.even ul li a {
   color: #ffffff;
 }
 
