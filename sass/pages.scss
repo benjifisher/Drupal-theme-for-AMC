@@ -53,12 +53,11 @@ body {
 }
 
 #logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  max-width: 50%;
   margin: 0;
   padding: 0;
 
   img {
+    max-width: 50%;
     vertical-align: bottom;
     margin-left: 2em;
   }
@@ -71,14 +70,10 @@ body {
 
   a:link,
   a:visited {
-    color: #fff;
+    color: #3f2913;
     text-decoration: none;
   }
 
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-  }
 }
 
 #site-slogan { /* The slogan (or tagline) of a website */
