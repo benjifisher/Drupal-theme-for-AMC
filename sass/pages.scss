@@ -118,6 +118,12 @@ body {
     background-color: #ffffff;
     border: 1px solid $amc-divider-color;
   }
+  img.pull-left {
+    margin-right: 1em;
+  }
+  img.pull-right {
+    margin-left: 1em;
+  }
 }
 
 .region-highlighted {

@@ -94,3 +94,13 @@
   display: inline-block;
   vertical-align: text-top;
 }
+
+/** --Committee pages-- **/
+.node-committee-page img {
+  float: left;
+  margin: 0.5ex 1em 1ex 0;
+  vertical-align: text-top;
+}
+.node-committee-page table {
+  width: 100%;
+}

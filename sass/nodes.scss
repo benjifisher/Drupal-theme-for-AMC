@@ -82,3 +82,15 @@
     vertical-align: text-top;
   }
 }
+
+/** --Committee pages-- **/
+.node-committee-page {
+  img {
+    float: left;
+    margin: 0.5ex 1em 1ex 0;
+    vertical-align: text-top;
+  }
+  table {
+    width: 100%;
+  }
+}
